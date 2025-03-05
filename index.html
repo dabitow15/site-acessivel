@@ -1,131 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Tropicália</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seu Nome">
+    <meta name="description" content="Site dedicado ao artista Chico Buarque">
+    <title>Chico Buarque - O Cantor e Compositor</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class=" p-5">
-        <p class="p-2"> Chico Buarque também se consagrou na música popular brasileira devido à valorização do femi- nino. Porém, tornou-se alvo de críticas por ser considerado um autor que difamava as mulheres. Ilus- tramos esta afirmativa com a canção Bolsa de Amores (1971) uma encomenda do cantor Mário Reis.
-        <nav class="container d-flex justify-content-between align-items-center" >
-            <img src="https://i.pinimg.com/736x/19/25/9d/19259d13f9622a19aff94addd105b999.jpg" class="nav-img " loading="lazy">
-            <ul class="nav mt-5">
 
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#discografia">Discografia</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
-            <div id="acessibilidade" class="menu-acessibilidade"> 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
-                </div>
-            </div>
         </nav>
-       
     </header>
 
+    <section id="home">
+        <div class="intro">
+            <h1>Bem-vindo ao site sobre Chico Buarque</h1>
+            <p>Conheça a história e a obra deste ícone da música brasileira.</p>
+        </div>
+    </section>
 
-    <main class="container my-5">
+    <section id="biografia">
+        <h2>Biografia</h2>
+        <p>Chico Buarque de Hollanda, mais conhecido como Chico Buarque, é um cantor, compositor e escritor brasileiro...</p>
+    </section>
 
-        <section id="inicio" class="my-5">
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-                <div class="esquerda-conteudo">
-                    <h1 class="display-4 text-white fst-italic fw-bold">conheça a historia de Chico Buarque de Holanda</h1>
-                    <img src="https://i.pinimg.com/736x/1a/eb/5f/1aeb5f1ab5461742186438cd53883366.jpg" class="mb-3" width="563"
-                        height="278" loading="lazy">
-                    <a href="#tropicalia"
-                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
-                        conhecer!</a>
-                </div>
-                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em um microfone" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+    <section id="discografia">
+        <h2>Discografia</h2>
+        <ul>
+            <li><a href="#">Chico Buarque (1966)</a></li>
+            <li><a href="#">Construção (1971)</a></li>
+            <li><a href="#">Canta Jobim (1992)</a></li>
+            <li><a href="#">Chico (2006)</a></li>
+            <!-- Adicione mais discos aqui -->
+        </ul>
+    </section>
 
-              </div>
-        </section>
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gallery">
+            <img src="imagem1.jpg" alt="Chico Buarque no palco">
+            <img src="imagem2.jpg" alt="Chico Buarque em um evento">
+            <!-- Adicione mais imagens aqui -->
+        </div>
+    </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="img/image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
-                </div>
-                <div class="col-5">
-                    <h2>CHICO BUARQUE</h2>
-                    <p class="p-2">Cantor, compositor, escritor, dramaturgo, Chico Buarque é um dos principais artistas brasileiros. Além disso, é uma personalidade intelectual e atuante na política. Tido como um dos maiores nomes da Música Popular Brasileira (MPB), compôs inúmeras canções importantes, muitas delas com críticas e denúncias sociais.</p>
-                </div>
-            </div>
-        </section>
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco:</p>
+        <form id="contatoForm">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu e-mail" required>
+            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Jorge_Ben_e_o_Trio_Mocotó_no_Teatro_da_Lagoa,_1971.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Os_Mutantes_2.tif.jpg" class="img-fluid rounded-5"
-                            loading="lazy">
-                    </div>
-                </div>
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
-                            class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-             </div>
-        </section>
-
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
-                    <h2 class="mb-3">Entre em contato</h2>
-                    <form>
-                        <div class="form-group mb-3">
-                            <label for="nome">Nome</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu email">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem"></textarea>
-                        </div>
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
-                                mensagem</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    <footer>
+        <p>&copy; 2025 Chico Buarque - Todos os direitos reservados</p>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="script.js"></script>
-  
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
