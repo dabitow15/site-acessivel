@@ -3,30 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chico Buarque - História e Músicas</title>
+    <title>Chico Buarque - História</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Chico Buarque</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Chico_Buarque_em_2010_crop.jpg/250px-Chico_Buarque_em_2010_crop.jpg" alt="Chico Buarque">
-        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores nomes da música e literatura brasileira. Sua obra é marcada pelo lirismo, pela crítica social e pela sofisticação musical.</p>
-        
-        <h2>Principais Músicas</h2>
-        <button class="btn" onclick="scrollLeft()">⬅️</button>
-        <button class="btn" onclick="scrollRight()">➡️</button>
-        
-        <div class="carousel-container" id="carousel">
-            <div class="carousel">
-                <div>Construção</div>
-                <div>Apesar de Você</div>
-                <div>O Meu Amor</div>
-                <div>Cálice</div>
-                <div>João e Maria</div>
-                <div>Geni e o Zepelim</div>
+        <p>A história de um dos maiores músicos brasileiros</p>
+    </header>
+    <main>
+        <section id="biografia">
+            <h2>Biografia</h2>
+            <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, nasceu em 19 de junho de 1944, no Rio de Janeiro. 
+            Ele é cantor, compositor, dramaturgo e escritor, sendo um dos maiores nomes da música popular brasileira.</p>
+            <button onclick="mostrarMais()">Saiba Mais</button>
+            <p id="maisInfo" style="display: none;">Chico se destacou pela sua poesia refinada, músicas de protesto contra a ditadura e por sua versatilidade artística.</p>
+        </section>
+        <section id="albuns">
+            <h2>Álbuns</h2>
+            <div class="carousel-container">
+                <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
+                <div class="carousel">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="album1.jpg" alt="Álbum 1">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Nome do Álbum 1 - Ano</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="album2.jpg" alt="Álbum 2">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Nome do Álbum 2 - Ano</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="album3.jpg" alt="Álbum 3">
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Nome do Álbum 3 - Ano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Site dedicado a Chico Buarque</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
