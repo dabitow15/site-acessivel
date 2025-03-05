@@ -64,7 +64,7 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: flex;
+    display: inline-block;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
