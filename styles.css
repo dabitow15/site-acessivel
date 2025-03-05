@@ -64,13 +64,13 @@ nav ul li a:hover {
 }
 
 .gallery {
-    display: inline-block;
+    display: flex;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 10px;
 }
 
 .gallery img {
-    width: 100%;
+    width: 30%;
     border-radius: 5px;
 }
 
