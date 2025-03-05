@@ -20,6 +20,14 @@ h1 {
     font-family: 'Diot', serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Diot&display=swap');
+
+h2 {
+    font-family: 'Diot', sans-serif;
+    color: #004d60; /* Azul petróleo */
+}
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
