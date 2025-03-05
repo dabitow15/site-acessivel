@@ -1,120 +1,38 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', serif;
-}
-
-body {
-    background-color: #000;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f4a261;
-}
-
-section {
-    padding: 50px;
-    text-align: center;
-}
-
-.intro {
-    background: #2a9d8f;
-    color: white;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-h1, h2 {
-    color: #043d2a;
-}
-
-ul {
-    list-style: none;
-    padding: 20px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #2a9d8f;
-    font-weight: bold;
-}
-
-ul li a:hover {
-    text-decoration: underline;
-}
-
-.gallery {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.gallery img {
-    width: 250px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
-    margin: auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background: #2a9d8f;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #f4a261;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Seu Nome">
+    <meta name="description" content="A história de Chico Buarque">
+    <title>Chico Buarque - Sua História</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chico Buarque - Vida e Obra</h1>
+    </header>
+    
+    <section class="biografia">
+        <h2>Infância e Juventude</h2>
+        <img src="chico_jovem.jpg" alt="Chico Buarque jovem">
+        <p>Francisco Buarque de Hollanda nasceu em 19 de junho de 1944, no Rio de Janeiro. Desde cedo, mostrou interesse pela música e pela literatura.</p>
+    </section>
+    
+    <section class="carreira">
+        <h2>O Início da Carreira</h2>
+        <img src="chico_palco.jpg" alt="Chico Buarque no palco">
+        <p>Nos anos 60, Chico despontou como um dos maiores compositores da MPB, lançando sucessos como "A Banda" e "Construção".</p>
+    </section>
+    
+    <section class="legado">
+        <h2>Legado e Reconhecimento</h2>
+        <img src="chico_premio.jpg" alt="Chico Buarque recebendo prêmio">
+        <p>Com mais de 50 anos de carreira, Chico Buarque é um dos artistas mais respeitados do Brasil, com uma vasta obra que inclui músicas, livros e peças teatrais.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 - Site dedicado a Chico Buarque</p>
+    </footer>
+</body>
+</html>
