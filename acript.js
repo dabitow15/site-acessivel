@@ -26,4 +26,28 @@ document.addEventListener("DOMContentLoaded", function () {
             this.style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0.1)";
         });
     });
+
+    // Alternar entre as abas
+    const tabs = document.querySelectorAll(".tab-button");
+    const sections = document.querySelectorAll(".tab-section");
+    
+    tabs.forEach(tab => {
+        tab.addEventListener("click", function () {
+            const target = this.getAttribute("data-target");
+            
+            sections.forEach(section => {
+                section.style.display = "none";
+            });
+            
+            document.getElementById(target).style.display = "block";
+            
+            tabs.forEach(t => t.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+
+    // Exibir a primeira aba ao carregar
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
 });
