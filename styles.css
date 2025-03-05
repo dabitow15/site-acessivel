@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #101f11;
-    color: #333;
+    background-color: #101016;
+    color: #000000;
     line-height: 1.6;
     text-align: center;
     padding: 20px;
@@ -22,7 +22,7 @@ header {
 }
 
 h1, h2 {
-    color: #556B2F; /* Verde musgo */
+    color: #263052; /* Verde musgo */
 }
 
 section {
@@ -64,7 +64,7 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: #556B2F;
+    background-color: #2f426b;
     color: #000000;
     border: none;
     cursor: pointer;
@@ -72,7 +72,7 @@ button {
 }
 
 button:hover {
-    background-color: #6B8E23;
+    background-color: #23518e;
 }
 
 footer {
