@@ -8,35 +8,51 @@
 </head>
 <body>
     <header>
-        <h1>Chico Buarque</h1>
-        <nav>
-            <ul>
-                <li><a href="#bio">Biografia</a></li>
-                <li><a href="#musicas">Músicas</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Chico Buarque</h1>
+            <nav>
+                <ul>
+                    <li><a href="#bio">Biografia</a></li>
+                    <li><a href="#musicas">Músicas</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
-    <section id="bio">
-        <h2>Biografia</h2>
-        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores compositores e escritores do Brasil.</p>
-    </section>
+    <main>
+        <section id="bio" class="dark-section">
+            <div class="container">
+                <h2>Biografia</h2>
+                <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores compositores e escritores do Brasil.</p>
+            </div>
+        </section>
+        
+        <section id="musicas" class="light-section">
+            <div class="container">
+                <h2>Músicas Famosas</h2>
+                <ul>
+                    <li>Construção</li>
+                    <li>Apesar de Você</li>
+                    <li>Roda Viva</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="contato" class="dark-section">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Entre em contato para mais informações sobre Chico Buarque.</p>
+                <button id="botao-contato">Clique aqui</button>
+            </div>
+        </section>
+    </main>
     
-    <section id="musicas">
-        <h2>Músicas Famosas</h2>
-        <ul>
-            <li>Construção</li>
-            <li>Apesar de Você</li>
-            <li>Roda Viva</li>
-        </ul>
-    </section>
-    
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato para mais informações sobre Chico Buarque.</p>
-        <button id="botao-contato">Clique aqui</button>
-    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Todos os direitos reservados.</p>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
