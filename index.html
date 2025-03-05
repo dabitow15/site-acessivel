@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Seu Nome">
-    <meta name="description" content="Site dedicado a Chico Buarque">
-    <title>Chico Buarque - Vida e Obra</title>
+    <title>Chico Buarque</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+        h1, h2 {
+            color: #004d61; /* Azul petróleo */
+        }
+        .carousel-container {
+            display: flex;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .album {
+            backface-visibility: hidden;
+            transform: rotateY(0deg);
+            transition: transform 0.6s ease-in-out;
+        }
+        .album.active {
+            transform: rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Chico Buarque</h1>
         <nav>
             <ul>
-                <li><a href="#biografia">Biografia</a></li>
-                <li><a href="#carreira">Carreira</a></li>
-                <li><a href="#discografia">Discografia</a></li>
+                <li><a href="#historia">História</a></li>
                 <li><a href="#galeria">Galeria</a></li>
-                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="biografia">
-        <h2>Biografia</h2>
-        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, nasceu em 19 de junho de 1944, no Rio de Janeiro. Além de cantor e compositor, também se destacou como escritor e dramaturgo.</p>
+
+    <section id="historia">
+        <h2>História</h2>
+        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores nomes da música popular brasileira...</p>
     </section>
-    
-    <section id="carreira">
-        <h2>Carreira</h2>
-        <p>Chico Buarque começou sua carreira musical nos anos 60, destacando-se pela sua poesia e engajamento político. Suas músicas marcaram gerações e atravessam décadas.</p>
-    </section>
-    
-    <section id="discografia">
-        <h2>Discografia</h2>
-        <ul>
-            <li>Chico Buarque de Hollanda (1966)</li>
-            <li>Construção (1971)</li>
-            <li>Ópera do Malandro (1979)</li>
-            <li>Francisco (1987)</li>
-            <li>Chico (2011)</li>
-        </ul>
-    </section>
-    
+
     <section id="galeria">
         <h2>Galeria</h2>
-        <img src="chico1.jpg" alt="Chico Buarque jovem">
-        <img src="chico2.jpg" alt="Chico Buarque no palco">
+        <div class="carousel">
+            <button id="prev">&#10094;</button>
+            <div class="carousel-container">
+                <div class="album active">
+                    <img src="album1.jpg" alt="Álbum 1">
+                    <p>Construção (1971)</p>
+                </div>
+                <div class="album">
+                    <img src="album2.jpg" alt="Álbum 2">
+                    <p>Almanaque (1981)</p>
+                </div>
+                <div class="album">
+                    <img src="album3.jpg" alt="Álbum 3">
+                    <p>Caravanas (2017)</p>
+                </div>
+            </div>
+            <button id="next">&#10095;</button>
+        </div>
     </section>
-        
-    
-    <section id="contato">
-        <h2>Contato</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Seu Nome" required>
-            <input type="email" id="email" placeholder="Seu E-mail" required>
-            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p id="feedback"></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 - Site dedicado a Chico Buarque</p>
-    </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>
