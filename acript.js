@@ -15,3 +15,8 @@ function moverCarrossel(direcao) {
 
     carrossel.style.transform = `translateX(${-currentIndex * cardWidth}px)`;
 }
+
+// Auto deslizar carrossel a cada 3 segundos
+setInterval(() => {
+    moverCarrossel(1);
+}, 3000);
