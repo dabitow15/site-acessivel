@@ -1,89 +1,75 @@
+/* style.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #f4f4f4;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
-
 header {
-    background-color: #1f1f1f;
-    padding: 30px 0;
-    border-radius: 10px;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #ffcc00;
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em;
 }
 
-.dark-section {
-    background-color: #1c1c1c;
-    padding: 50px 0;
-    border-radius: 15px;
-    margin: 20px 0;
-}
-
-.light-section {
-    background-color: #2a2a2a;
-    padding: 50px 0;
-    border-radius: 15px;
-    margin: 20px 0;
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 h2 {
-    font-size: 2em;
-    color: #ffcc00;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-button {
-    background-color: #ffcc00;
-    color: black;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
+.album {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #e6b800;
+.album:hover {
+    transform: scale(1.05);
 }
 
 footer {
-    background-color: #1f1f1f;
+    background-color: #2c3e50;
+    color: white;
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
