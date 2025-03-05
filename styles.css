@@ -1,38 +1,57 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Seu Nome">
-    <meta name="description" content="A história de Chico Buarque">
-    <title>Chico Buarque - Sua História</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Chico Buarque - Vida e Obra</h1>
-    </header>
-    
-    <section class="biografia">
-        <h2>Infância e Juventude</h2>
-        <img src="chico_jovem.jpg" alt="Chico Buarque jovem">
-        <p>Francisco Buarque de Hollanda nasceu em 19 de junho de 1944, no Rio de Janeiro. Desde cedo, mostrou interesse pela música e pela literatura.</p>
-    </section>
-    
-    <section class="carreira">
-        <h2>O Início da Carreira</h2>
-        <img src="chico_palco.jpg" alt="Chico Buarque no palco">
-        <p>Nos anos 60, Chico despontou como um dos maiores compositores da MPB, lançando sucessos como "A Banda" e "Construção".</p>
-    </section>
-    
-    <section class="legado">
-        <h2>Legado e Reconhecimento</h2>
-        <img src="chico_premio.jpg" alt="Chico Buarque recebendo prêmio">
-        <p>Com mais de 50 anos de carreira, Chico Buarque é um dos artistas mais respeitados do Brasil, com uma vasta obra que inclui músicas, livros e peças teatrais.</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 - Site dedicado a Chico Buarque</p>
-    </footer>
-</body>
-</html>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    font-size: 24px;
+}
+
+h1, h2 {
+    color: #556B2F; /* Verde musgo */
+}
+
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    background: #333;
+    color: #fff;
+    padding: 15px;
+    font-size: 14px;
+}
