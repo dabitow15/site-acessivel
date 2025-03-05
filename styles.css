@@ -1,82 +1,35 @@
 body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
 }
 
 header {
-    background: linear-gradient(90deg, #2c3e50, #34495e);
-    color: white;
-    text-align: center;
-    padding: 2rem;
-}
-
-nav {
-    background: #2c3e50;
-    padding: 1rem;
+    background-color: #0f0f0f;
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+h1 {
+    color: #2e7a89;
+    transition: color 0.3s ease;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-}
-
-main {
-    padding: 2rem;
-    max-width: 900px;
+.container {
+    max-width: 1000px;
     margin: auto;
+    padding: 20px;
 }
 
-.album-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.album {
-    background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    min-width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.album:hover {
-    transform: scale(1.05);
-}
-
-.gallery {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
+.section {
+    margin-bottom: 40px;
 }
 
 footer {
+    background-color: #0f0f0f;
     text-align: center;
-    padding: 1rem;
-    background: #34495e;
-    color: white;
-    margin-top: 2rem;
+    padding: 10px;
+    margin-top: 20px;
 }
