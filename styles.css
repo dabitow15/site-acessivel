@@ -1,42 +1,58 @@
-/* Estilo geral */
 body {
     font-family: "Times New Roman", serif;
+    background-color: black;
+    color: white;
+    text-align: center;
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f5f5f5;
 }
 
-/* Cabeçalho */
-header {
-    background-color: #004d61;
-    color: white;
-    padding: 20px;
+h1, h2 {
+    color: #003366;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.container {
+    width: 80%;
+    margin: auto;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Seções */
-section {
-    padding: 20px;
-}
-
-/* Carrossel */
 .carousel {
     display: flex;
-    align-items: center;
-   
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+}
+
+.carousel div {
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background: #444;
+    border-radius: 10px;
+    transform: rotateY(10deg);
+    transition: transform 0.5s;
+}
+
+.carousel div:hover {
+    transform: rotateY(0deg);
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}

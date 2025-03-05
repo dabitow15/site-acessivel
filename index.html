@@ -3,68 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chico Buarque</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: "Times New Roman", serif;
-        }
-        h1, h2 {
-            color: #004d61; /* Azul petróleo */
-        }
-        .carousel-container {
-            display: flex;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-        }
-        .album {
-            backface-visibility: hidden;
-            transform: rotateY(0deg);
-            transition: transform 0.6s ease-in-out;
-        }
-        .album.active {
-            transform: rotateY(180deg);
-        }
-    </style>
+    <title>Chico Buarque - História e Músicas</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Chico Buarque</h1>
-        <nav>
-            <ul>
-                <li><a href="#historia">História</a></li>
-                <li><a href="#galeria">Galeria</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="historia">
-        <h2>História</h2>
-        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores nomes da música popular brasileira...</p>
-    </section>
-
-    <section id="galeria">
-        <h2>Galeria</h2>
-        <div class="carousel">
-            <button id="prev">&#10094;</button>
-            <div class="carousel-container">
-                <div class="album active">
-                    <img src="album1.jpg" alt="Álbum 1">
-                    <p>Construção (1971)</p>
-                </div>
-                <div class="album">
-                    <img src="album2.jpg" alt="Álbum 2">
-                    <p>Almanaque (1981)</p>
-                </div>
-                <div class="album">
-                    <img src="album3.jpg" alt="Álbum 3">
-                    <p>Caravanas (2017)</p>
-                </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Chico_Buarque_em_2010_crop.jpg/250px-Chico_Buarque_em_2010_crop.jpg" alt="Chico Buarque">
+        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores nomes da música e literatura brasileira. Sua obra é marcada pelo lirismo, pela crítica social e pela sofisticação musical.</p>
+        
+        <h2>Principais Músicas</h2>
+        <button class="btn" onclick="scrollLeft()">⬅️</button>
+        <button class="btn" onclick="scrollRight()">➡️</button>
+        
+        <div class="carousel-container" id="carousel">
+            <div class="carousel">
+                <div>Construção</div>
+                <div>Apesar de Você</div>
+                <div>O Meu Amor</div>
+                <div>Cálice</div>
+                <div>João e Maria</div>
+                <div>Geni e o Zepelim</div>
             </div>
-            <button id="next">&#10095;</button>
         </div>
-    </section>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
