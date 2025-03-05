@@ -4,71 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Seu Nome">
-    <meta name="description" content="Site dedicado ao artista Chico Buarque">
-    <title>Chico Buarque - O Cantor e Compositor</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Site dedicado a Chico Buarque">
+    <title>Chico Buarque - Vida e Obra</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
+        <h1>Chico Buarque</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
                 <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#carreira">Carreira</a></li>
                 <li><a href="#discografia">Discografia</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
-
-    <section id="home">
-        <div class="intro">
-            <h1>Bem-vindo ao site sobre Chico Buarque</h1>
-            <p>Conheça a história e a obra deste ícone da música brasileira.</p>
-        </div>
-    </section>
-
+    
     <section id="biografia">
         <h2>Biografia</h2>
-        <p>Chico Buarque de Hollanda, mais conhecido como Chico Buarque, é um cantor, compositor e escritor brasileiro...</p>
+        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, nasceu em 19 de junho de 1944, no Rio de Janeiro. Além de cantor e compositor, também se destacou como escritor e dramaturgo.</p>
     </section>
-
+    
+    <section id="carreira">
+        <h2>Carreira</h2>
+        <p>Chico Buarque começou sua carreira musical nos anos 60, destacando-se pela sua poesia e engajamento político. Suas músicas marcaram gerações e atravessam décadas.</p>
+    </section>
+    
     <section id="discografia">
         <h2>Discografia</h2>
         <ul>
-            <li><a href="#">Chico Buarque (1966)</a></li>
-            <li><a href="#">Construção (1971)</a></li>
-            <li><a href="#">Canta Jobim (1992)</a></li>
-            <li><a href="#">Chico (2006)</a></li>
-            <!-- Adicione mais discos aqui -->
+            <li>Chico Buarque de Hollanda (1966)</li>
+            <li>Construção (1971)</li>
+            <li>Ópera do Malandro (1979)</li>
+            <li>Francisco (1987)</li>
+            <li>Chico (2011)</li>
         </ul>
     </section>
-
+    
     <section id="galeria">
         <h2>Galeria</h2>
-        <div class="gallery">
-            <img src="imagem1.jpg" alt="Chico Buarque no palco">
-            <img src="imagem2.jpg" alt="Chico Buarque em um evento">
-            <!-- Adicione mais imagens aqui -->
-        </div>
+        <img src="chico1.jpg" alt="Chico Buarque jovem">
+        <img src="chico2.jpg" alt="Chico Buarque no palco">
     </section>
-
+    
     <section id="contato">
         <h2>Contato</h2>
-        <p>Entre em contato conosco:</p>
-        <form id="contatoForm">
-            <input type="text" id="nome" placeholder="Seu nome" required>
-            <input type="email" id="email" placeholder="Seu e-mail" required>
-            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <textarea id="message" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
+        <p id="feedback"></p>
     </section>
-
+    
     <footer>
-        <p>&copy; 2025 Chico Buarque - Todos os direitos reservados</p>
+        <p>&copy; 2025 - Site dedicado a Chico Buarque</p>
     </footer>
-
+    
     <script src="script.js"></script>
 </body>
 </html>
