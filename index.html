@@ -3,79 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chico Buarque - Vida e Obra</title>
+    <title>Chico Buarque</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <h1>Chico Buarque</h1>
         <nav>
             <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#obras">Obras</a></li>
-                <li><a href="#textos">Textos</a></li>
+                <li><a href="#bio">Biografia</a></li>
+                <li><a href="#musicas">Músicas</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-        <h1>Chico Buarque</h1>
     </header>
-    <main>
-        <section id="sobre">
-            <h2>Sobre Chico Buarque</h2>
-            <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, nasceu em 19 de junho de 1944, no Rio de Janeiro. 
-            Ele é um dos maiores nomes da música popular brasileira, sendo também dramaturgo e escritor.</p>
-            <p>Desde pequeno, Chico foi influenciado pela cultura e arte, pois cresceu em um ambiente familiar ligado à literatura e à música.</p>
-        </section>
-        
-        <section id="obras">
-            <h2>Obras</h2>
-            <div class="carousel-container">
-                <button class="prev" onclick="moverCarrossel(-1)">&#10094;</button>
-                <div class="carousel">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="album1.jpg" alt="Álbum 1">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Nome do Álbum 1 - Ano</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="album2.jpg" alt="Álbum 2">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Nome do Álbum 2 - Ano</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="album3.jpg" alt="Álbum 3">
-                            </div>
-                            <div class="flip-card-back">
-                                <p>Nome do Álbum 3 - Ano</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="next" onclick="moverCarrossel(1)">&#10095;</button>
-            </div>
-        </section>
-        
-        <section id="textos">
-            <h2>Textos</h2>
-            <p>Chico Buarque também é um renomado escritor e dramaturgo, com obras que exploram temas sociais e políticos.</p>
-            <p>Entre seus livros mais conhecidos estão "Budapeste", "Leite Derramado" e "Essa Gente".</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 - Site dedicado a Chico Buarque</p>
-        <p>Redes Sociais: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
-        <p>Contato: contato@chicobuarque.com</p>
-    </footer>
+    
+    <section id="bio">
+        <h2>Biografia</h2>
+        <p>Francisco Buarque de Hollanda, conhecido como Chico Buarque, é um dos maiores compositores e escritores do Brasil.</p>
+    </section>
+    
+    <section id="musicas">
+        <h2>Músicas Famosas</h2>
+        <ul>
+            <li>Construção</li>
+            <li>Apesar de Você</li>
+            <li>Roda Viva</li>
+        </ul>
+    </section>
+    
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato para mais informações sobre Chico Buarque.</p>
+        <button id="botao-contato">Clique aqui</button>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
