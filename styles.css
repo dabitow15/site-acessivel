@@ -1,200 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
-
-:root {
-    --laranja-claro: #4f726d;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-size: 1rem;
-    font-family: 'Montserrat';
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #ffffff;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+}
 
 section {
-    padding-bottom: 5rem;
+    padding: 50px;
+    text-align: center;
 }
 
-
-.nav-link {
-    color: #CB6D43;
-    font-weight: 600;
-}
-
-.inicio-fundo {
-    /* aula 3 */
-    background-image: url('img/4965007.jpg');
-    /* Substitua pelo caminho da sua imagem */
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
+.intro {
+    background: #2a9d8f;
+    color: white;
     padding: 40px;
-    margin: 0 auto;
-}
-
-/* posicionamento para a imagem à direita */
-.img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
-}
-
-
-.esquerda-conteudo {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-}
-
-
-.botao-inicio {
-    background-color: var(--laranja-claro);
-    border-radius: 30px;
-    border: none;
-    width: 14em;
-    height: 3em;
-    align-content: center;
-
-}
-
-.display-4 {
-    text-shadow: -5px 5px var(--laranja-claro);
-}
-
-
-#tropicalia {
-    position: relative;
-    padding-top: 5rem;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    background: url('img/flor.png') top right no-repeat,
-        url('img/flor-esquerda.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    /* Ajuste o tamanho conforme necessário */
-}
-
-#tropicalia .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    /* Garante que o conteúdo fica acima das imagens do background */
-}
-
-
-h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    font-style: normal;
-    color: var(--laranja-claro);
-}
-
-#galeria {
-    background-color: #FAF4F4;
-
-}
-
-.fundo-galeria {
-    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
-    background-size: 180px 180px;
-}
-
-#contato {
-    background-image: url('img/4965007.jpg');
-    background-size: cover;
-    padding: 4rem 0;
-    /* Espaçamento interno para a seção de contato */
-
-}
-
-.formulario {
-    background-color: #ffffff;
-    padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #2a9d8f;
     font-weight: bold;
 }
 
-.formulario button {
-    background-color: #CB6D43;
-    border: none;
-    font-weight: bold;
+ul li a:hover {
+    text-decoration: underline;
 }
 
-.form-control {
-    background-color: #F1EDEF;
-}
-.menu-acessibilidade{
-    position: fixed;
-    top:2rem;
-    right:20px;
-    z-index: 1000;
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.rotacao-botao{
-    transform: rotate(-90deg);
-    transform-origin: right center;
+.gallery img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
+form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
 }
 
-.opcoes-acessibilidade button{
-    margin-bottom: 5px;
-}
-.apresenta-lista{
-    display: none;
-}
-
-.alto-contraste{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.alto-contraste header,
-.alto-contraste footer,
-.alto-contraste .formulario{
-    background-color: var(--alto-contraste-fundo);
-    color: var(--alto-contraste-texto);
+button {
+    background: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
 }
 
-.alto-contraste .nav-link{
-    color: var(--alto-contraste-link);
+button:hover {
+    background: #f4a261;
 }
 
-.alto-contraste .botao-inicio,
-.alto-contraste .formulario button,
-.alto-contraste .btn-primary{
-    background-color: var(--alto-contraste-link);
-    color: var(--alto-contraste-fundo)
-}
-
-.alto-contraste #tropicalia {
-    background: none;
-}
-
-.alto-contraste #galeria {
-    background-color: var(--alto-contraste-fundo);
-}
-.alto-contraste .fundo-galeria {
-    background: none;
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
