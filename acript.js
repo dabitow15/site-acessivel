@@ -1,27 +1,29 @@
-/* script.js */
-document.addEventListener("DOMContentLoaded", () => {
-    const albums = document.querySelectorAll(".album");
-
-    albums.forEach(album => {
-        album.addEventListener("mouseover", () => {
-            album.style.backgroundColor = "#34495e";
-            album.style.color = "white";
-            album.style.transition = "0.3s";
-        });
-        album.addEventListener("mouseout", () => {
-            album.style.backgroundColor = "#fff";
-            album.style.color = "#333";
-        });
-    });
-
-    // Adiciona um efeito de rolagem suave ao clicar nos links do menu
-    document.querySelectorAll("nav a").forEach(anchor => {
+document.addEventListener("DOMContentLoaded", function () {
+    // Efeito de rolagem suave ao clicar nos links do menu
+    document.querySelectorAll("nav ul li a").forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
-            document.getElementById(targetId).scrollIntoView({
-                behavior: "smooth"
-            });
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 50,
+                    behavior: "smooth"
+                });
+            }
+        });
+    });
+
+    // Animação nos cartões de álbuns ao passar o mouse
+    document.querySelectorAll(".album").forEach(album => {
+        album.addEventListener("mouseover", function () {
+            this.style.transform = "scale(1.05)";
+            this.style.boxShadow = "0px 10px 20px rgba(0, 0, 0, 0.2)";
+        });
+        album.addEventListener("mouseout", function () {
+            this.style.transform = "scale(1)";
+            this.style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0.1)";
         });
     });
 });
