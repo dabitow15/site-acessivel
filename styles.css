@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', serif;
 }
 
 body {
-    background-color: #f4f4f4;
+    background-color: #000;
     color: #333;
     line-height: 1.6;
 }
@@ -50,7 +50,7 @@ section {
 }
 
 h1, h2 {
-    color: #333;
+    color: #043d2a;
 }
 
 ul {
