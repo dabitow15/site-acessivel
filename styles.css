@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Diot&display=swap');
+
 body {
     background-color: #1a1a1a;
     color: #e0e0e0;
@@ -15,6 +17,7 @@ header {
 h1 {
     color: #2e7a89;
     transition: color 0.3s ease;
+    font-family: 'Diot', serif;
 }
 
 nav ul {
